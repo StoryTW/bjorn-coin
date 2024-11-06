@@ -22,6 +22,7 @@ export const Main = () => {
             style={{
               objectFit: 'contain',
             }}
+            sizes="(max-width: 768px) 100vw"
             fill
           />
         </div>
