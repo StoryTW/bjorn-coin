@@ -1,0 +1,18 @@
+.btnLink {
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 34px;
+  background: var(--purple);
+  color: white;
+  @include inter_800_22;
+  @include transition;
+
+  &:hover {
+    opacity: 0.75;
+    @include transition;
+  }
+}

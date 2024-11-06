@@ -1,0 +1,10 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  .name {
+    @include inter_900_54;
+    color: white;
+  }
+}

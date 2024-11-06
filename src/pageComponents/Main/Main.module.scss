@@ -1,0 +1,40 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 980px;
+}
+
+.title {
+  @include inter_700_144;
+  color: white;
+  margin-bottom: 34px;
+
+  span {
+    font-weight: 400;
+  }
+}
+
+.btns {
+  margin-bottom: 34px;
+}
+
+.description {
+  @include inter_800_24;
+  color: white;
+}
+
+.image {
+  position: relative;
+  width: 900px;
+  height: 900px;
+  max-width: 900px;
+  max-height: 900px;
+}
+
+.flag {
+  transform: translateY(66px) translateX(-40px);
+}

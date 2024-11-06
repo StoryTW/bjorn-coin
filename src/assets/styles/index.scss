@@ -1,0 +1,21 @@
+@import './consts.scss';
+@import './globals.scss';
+
+.root {
+  background-image: url('/images/bjorn-bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  max-width: 1858px;
+  margin: 0 auto;
+  padding: 0 32px;
+  width: 100%;
+
+  @include respond(tabletL) {
+    padding: 0 12px;
+  }
+}

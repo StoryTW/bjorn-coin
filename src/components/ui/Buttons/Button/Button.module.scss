@@ -1,0 +1,37 @@
+.btn {
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 34px;
+  @include transition;
+  background: var(--purple);
+  color: white;
+  cursor: pointer;
+  @include inter_800_22;
+  outline: none;
+
+  &:active {
+    border: none;
+    background: var(--purple);
+  }
+
+  &:focus {
+    border: none;
+    background: var(--purple);
+  }
+
+  &:disabled {
+    border: none;
+    background: var(--purple);
+    cursor: not-allowed;
+    opacity: 0.2;
+  }
+
+  &:hover {
+    background: var(--purple);
+    border: none;
+    opacity: 0.75;
+  }
+}
