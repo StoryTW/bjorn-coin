@@ -1,0 +1,23 @@
+.root {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  .linkIcon {
+    padding: 16px !important;
+
+    @include respond(laptop1024) {
+      padding: 10px !important;
+
+      svg {
+        width: 21px !important;
+        height: 21px !important;
+      }
+    }
+
+    svg {
+      width: 34px;
+      height: 34px;
+    }
+  }
+}

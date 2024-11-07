@@ -12,6 +12,11 @@
   @include inter_800_22;
   outline: none;
 
+  @include respond(laptop1024) {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
   &:active {
     border: none;
     background: var(--purple);

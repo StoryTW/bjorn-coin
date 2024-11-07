@@ -9,8 +9,17 @@
   display: flex;
   align-items: center;
   gap: 10px;
+
+  @include respond(laptop1024) {
+    img {
+      width: 14px;
+      height: 14px;
+    }
+  }
 }
 
-.linkIcon {
-  padding: 16px !important;
+.socials {
+  @include respond(laptop1024) {
+    display: none !important;
+  }
 }

@@ -1,10 +1,11 @@
-'use client'
+'use client';
 import React from 'react';
 import styles from './ButtonsLinkWrapper.module.scss';
 import { ButtonLink } from '../ui/Buttons/ButtonLink/ButtonLink';
 import { Button } from '../ui/Buttons/Button/Button';
 import Image from 'next/image';
 import { CONTRACT_HASH } from '@/utils/constants';
+import { Socials } from '../Socials/Socials';
 
 export const ButtonsLinkWrapper = () => {
   const handleCopy = () => {
@@ -27,20 +28,7 @@ export const ButtonsLinkWrapper = () => {
           <Image src={'/images/icon-copy.svg'} alt='copy' width={22} height={22} />
         </div>
       </Button>
-      <ButtonLink
-        href={'https://t.me/bjorn_solana'}
-        target='_blank'
-        className={styles.linkIcon}
-      >
-        <Image src={'/images/telegram.svg'} alt='copy' width={34} height={34} />
-      </ButtonLink>
-      <ButtonLink
-        href={'https://x.com/bjorn_solana_'}
-        target='_blank'
-        className={styles.linkIcon}
-      >
-        <Image src={'/images/twitter.svg'} alt='copy' width={34} height={34} />
-      </ButtonLink>
+      <Socials className={styles.socials} />
     </div>
   );
 };

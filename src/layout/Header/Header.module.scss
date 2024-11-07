@@ -1,4 +1,19 @@
 .header {
   background-color: transparent;
   padding: 36px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .socials {
+    display: none;
+
+    @include respond(laptop1024) {
+      display: flex;
+    }
+  }
+
+  @include respond(laptop1024) {
+    padding: 24px 0px;
+  }
 }

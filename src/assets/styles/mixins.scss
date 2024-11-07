@@ -12,8 +12,14 @@
     }
   }
 
-  @if $breakpoint == laptopL {
+  @if $breakpoint == laptop1024 {
     @media only screen and (width <= 1024px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == laptop912 {
+    @media only screen and (width <= 912px) {
       @content;
     }
   }
@@ -46,6 +52,12 @@
     @media only screen and (width <= 540px) {
       @content;
     }
+  }  
+  
+  @if $breakpoint == mobile475 {
+    @media only screen and (width <= 475px) {
+      @content;
+    }
   }
 
   @if $breakpoint == mobileL {
@@ -56,6 +68,12 @@
 
   @if $breakpoint == mobile {
     @media only screen and (width <= 375px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile360 {
+    @media only screen and (width <= 360px) {
       @content;
     }
   }

@@ -11,6 +11,11 @@
   @include inter_800_22;
   @include transition;
 
+  @include respond(laptop1024) {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
   &:hover {
     opacity: 0.75;
     @include transition;

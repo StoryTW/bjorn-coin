@@ -1,17 +1,41 @@
 .wrapper {
   display: flex;
   align-items: center;
+
+  @include respond(laptop912) {
+    flex-direction: column-reverse;
+  }
 }
 
 .content {
   width: 100%;
   max-width: 980px;
+
+  @include respond(laptopXL) {
+    max-width: 740px;
+  }
 }
 
 .title {
   @include inter_700_144;
   color: white;
   margin-bottom: 34px;
+
+  @include respond(laptopXL) {
+    font-size: 80px;
+  }
+
+  @include respond(laptop1024) {
+    font-size: 64px;
+  }
+
+  @include respond(mobile475) {
+    font-size: 50px;
+  }
+
+  @include respond(mobile360) {
+    font-size: 44px;
+  }
 
   span {
     font-weight: 400;
@@ -25,6 +49,22 @@
 .description {
   @include inter_800_24;
   color: white;
+
+  @include respond(laptop1024) {
+    font-size: 20px;
+  }
+
+  @include respond(laptop912) {
+    margin-bottom: 48px;
+  }
+
+  @include respond(mobile475) {
+    font-size: 18px;
+  }
+
+  @include respond(mobile360) {
+    font-size: 16px;
+  }
 }
 
 .image {
@@ -33,10 +73,50 @@
   height: 900px;
   max-width: 900px;
   max-height: 900px;
+
+  @include respond(laptopXL) {
+    width: 700px;
+    height: 500px;
+    max-width: 700px;
+    max-height: 500px;
+  }
+
+  @include respond(laptop912) {
+    width: 475px;
+    height: 475px;
+    max-width: 475px;
+    max-height: 475px;
+  }
+
+  @include respond(mobile475) {
+    width: 360px;
+    height: 360px;
+    max-width: 360px;
+    max-height: 360px;
+  }
+
+  @include respond(mobile360) {
+    width: 280px;
+    height: 280px;
+    max-width: 280px;
+    max-height: 280px;
+  }
 }
 
 .flag {
   transform: translateY(56px) translateX(-40px);
   width: 165px;
   height: 165px;
+
+  @include respond(laptopXL) {
+    width: 100px;
+    height: 100px;
+    transform: translateY(34px) translateX(-20px);
+  }
+
+  @include respond(mobile475) {
+    width: 64px;
+    height: 64px;
+    transform: translateY(24px) translateX(-14px);
+  }
 }

@@ -3,8 +3,31 @@
   align-items: center;
   gap: 14px;
 
+  @include respond(mobile475) {
+    gap: 6px;
+  }
+
+  .image {
+    @include respond(mobile475) {
+      width: 44px; 
+      height: 44px;
+    }
+  }
+
+  @include respond(laptop1024) {
+    font-size: 36px;
+  }
+
   .name {
     @include inter_900_54;
     color: white;
+
+    @include respond(laptop1024) {
+      font-size: 36px;
+    }
+
+    @include respond(mobile475) {
+      font-size: 24px;
+    }
   }
 }
